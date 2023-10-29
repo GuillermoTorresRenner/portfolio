@@ -1,0 +1,10 @@
+function Greetings({children}){
+  return(
+    <div className=" h-64 bg-neutral-900 ">
+      
+      {children}
+    </div>
+    )
+}
+
+export default Greetings
