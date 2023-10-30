@@ -9,11 +9,9 @@ import ProjectCard from "../components/ProjectCard";
 function Home() {
   const [section, setSection] = useState(0);
   const [project, setProject] = useState(1);
+
   return (
-    <div
-      className="bg-cover bg-no-repeat h-screen "
-      style={{ backgroundImage: "url(bg.png)" }}
-    >
+    <div className="h-screen bg-gradient-to-bl from-orange-400 from-15% to-neutral-900 to-10%  ">
       <Greeting> ¡Hola soy Guillermo Torres!</Greeting>
       <Typing />
       <div className="flex justify-center flex-wrap">
