@@ -1,6 +1,6 @@
 const Selectors = ({ section, setSection }) => {
   return (
-    <div className="w-1/4">
+    <div className="hidden lg:block col-start-2 col-span-3">
       <ul className="border-l-4 px-4  border-gray-500 rounded-xl  mx-20  py-10">
         <li
           className={`text-orange-400 mb-8 hover:text-2xl  ${

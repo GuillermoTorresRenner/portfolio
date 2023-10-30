@@ -4,7 +4,7 @@ const ProjectCard = ({ section, project }) => {
     <div
       className={`${
         section !== 3 && "hidden"
-      } border-4 rounded-2xl border-gray-400 h-40 w-3/5 mt-10 h-60`}
+      } border-4 rounded-2xl border-gray-400  w-3/5 mt-10 px-10 pb-10 h-full bg-neutral-900`}
     >
       {project === 1 && (
         <>

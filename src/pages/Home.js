@@ -6,23 +6,33 @@ import Section from "../components/Section";
 import Selectors from "../components/Selectors";
 import Typing from "../components/Typing";
 import ProjectCard from "../components/ProjectCard";
+import Navbar from "../components/Navbar";
 function Home() {
-  const [section, setSection] = useState(0);
+  const [section, setSection] = useState(1);
   const [project, setProject] = useState(1);
 
   return (
-    <div className="h-screen bg-gradient-to-bl from-orange-400 from-15% to-neutral-900 to-10%  ">
+    <div className="h-screen bg-neutral-900 lg:bg-gradient-to-bl from-orange-400 from-15% to-neutral-900 to-10%  ">
       <Greeting> ¡Hola soy Guillermo Torres!</Greeting>
       <Typing />
-      <div className="flex justify-center flex-wrap">
-        <Selectors section={section} setSection={setSection} />
-        <Section section={section} project={project} setProject={setProject} />
+      <Navbar
+        section={section}
+        setSection={setSection}
+        project={project}
+        setProject={setProject}
+      />
+      <div className="container grid grid-cols-12 bg-neutral-900">
+        <Selectors section={section} setSection={setSection} className="" />
+        <Section
+          section={section}
+          project={project}
+          setProject={setProject}
+          className="col-span-3"
+        />
       </div>
-      <div className="flex justify-center flex-wrap">
+      <div className="flex justify-center flex-wrap bg-neutral-900">
         <ProjectCard section={section} project={project} />
       </div>
-
-      {/* <Footer/>  */}
     </div>
   );
 }
