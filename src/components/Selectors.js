@@ -11,7 +11,7 @@ const Selectors = ({ section, setSection }) => {
           <span className="text-2xl text-extrabold">
             {section === 1 && "> "}
           </span>
-          Acerca de mi
+          Acerca de Mí
         </li>
 
         <li

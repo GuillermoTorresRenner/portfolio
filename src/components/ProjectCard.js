@@ -4,7 +4,7 @@ const ProjectCard = ({ section, project }) => {
     <div
       className={`${
         section !== 3 && "hidden"
-      } border-4 rounded-2xl border-gray-400  w-3/5 mt-10 px-10 pb-10 h-full bg-neutral-900`}
+      } border-4 rounded-2xl border-gray-400 w-4/5 text-xs sm:text-xl sm:w-3/5 mt-10 px-10 pb-10 h-full bg-neutral-900`}
     >
       {project === 1 && (
         <>
@@ -30,13 +30,14 @@ const ProjectCard = ({ section, project }) => {
           <div>
             <p className="text-gray-400 ml-3 mt-4">
               Proyecto realizado con Quasar Framework y Firebase para notificar
-              acerca de las detenciones de alambiques en proceso de destilación.
+              detenciones de alambiques en proceso de destilación.
             </p>
             <p className="text-gray-400 ml-3 mt-2">
-              Cuando un alambique es deteneido se notifica del momento, el
-              operario y la causa de detención reportando por correo al
-              administrador para que valide la eventualidad y se pueda alimentar
-              las KPI de la empresa con estas contingenicas
+              Cuando un alambique es detenido se notifica el destilador notifica
+              la causa de detención reportando y el alambique detenido.La App
+              envía un correo al administrador para que valide la eventualidad y
+              se pueda alimentar las KPI de la empresa con estas contingenicas
+              tabuladas.
             </p>
           </div>
         </>
@@ -65,11 +66,12 @@ const ProjectCard = ({ section, project }) => {
           <div>
             <p className="text-gray-400 ml-3 mt-4">
               Proyecto realizado con HTML5, CSS3, y Bootrap, como trabajo
-              durante el cursado de Desarrollo web en la plataforma CoderHouse
+              durante el cursado de Desarrollo web en la plataforma CoderHouse.
             </p>
             <p className="text-gray-400 ml-3 mt-2">
-              La misma se realizó a pedido de un conocido quien definió el
-              estilo de la página para su negocio
+              La misma se realizó a pedido de un cliente quien definió el estilo
+              de la página para su negocio, siendo éste mi primer trabajo para
+              un tercero,
             </p>
           </div>
         </>
@@ -91,8 +93,8 @@ const ProjectCard = ({ section, project }) => {
               la plataforma CoderHouse.
             </p>
             <p className="text-gray-400 ml-3 mt-2">
-              Como ejercicio se realiza una tienda virtual ficticia de plantas e
-              insumos de jardinería.
+              Como ejercicio se realiza una tienda virtual ficticia de venta de
+              plantas e insumos de jardinería.
             </p>
           </div>
         </>
@@ -112,14 +114,14 @@ const ProjectCard = ({ section, project }) => {
             <p className="text-gray-400 ml-3 mt-4">
               Proyecto realizado con Quasar Framework para el Front End y Back
               End de ExpressJs con base de datos MongoDB desplegado desde un
-              docker
+              contenedor docker.
             </p>
             <p className="text-gray-400 ml-3 mt-2">
-              Este Proyecto se encuentra en desarrolló a la fecha y se enfoca en
+              Este Proyecto se encuentra en desarrollo a la fecha y se enfoca en
               lograr un sistema dedicado al control de acceso de trabajadores a
-              servicios de alimentación en casinos mineros, administrando
-              casinos, servicios, empresas y trabajadores, dando reportes de
-              consumo y bases de facturación.
+              servicios de alimentación en casinos mineros. Sus principales
+              casos de uso son: administrar casinos, servicios, empresas y
+              trabajadores, dar reportes de consumo y bases de facturación.
             </p>
           </div>
         </>
