@@ -12,7 +12,7 @@ function Home() {
   const [project, setProject] = useState(1);
 
   return (
-    <div className="h-screen bg-neutral-900 lg:bg-gradient-to-bl from-orange-400 from-15% to-neutral-900 to-10%  ">
+    <div className="lg:bg-gradient-to-bl from-orange-400 from-15% to-neutral-900 to-10% pb-5 ">
       <Greeting> ¡Hola soy Guillermo Torres!</Greeting>
       <Typing />
       <Navbar
@@ -21,7 +21,7 @@ function Home() {
         project={project}
         setProject={setProject}
       />
-      <div className="container grid grid-cols-12 bg-neutral-900">
+      <div className="container grid grid-cols-12">
         <Selectors section={section} setSection={setSection} className="" />
         <Section
           section={section}
@@ -30,7 +30,7 @@ function Home() {
           className="col-span-3"
         />
       </div>
-      <div className="flex justify-center flex-wrap bg-neutral-900">
+      <div className="flex justify-center flex-wrap">
         <ProjectCard section={section} project={project} />
       </div>
     </div>

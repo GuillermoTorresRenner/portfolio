@@ -5,7 +5,7 @@ import Contact from "./Contact";
 const Section = ({ section, setProject, project }) => {
   return (
     <div
-      className={` col-span-10 col-start-2 sm:col-start-5 sm:col-span-7 bg-neutral-900 ${
+      className={` col-span-10 col-start-2 sm:col-start-5 sm:col-span-7 ${
         section !== 0 && "border-gray-500 border-l-4 border-r-4 rounded-xl"
       }`}
     >

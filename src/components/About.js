@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <>
-      <h2 className="text-center text-4xl text-gray-500 shadow">Sobre Mi</h2>
+      <h2 className="text-center text-4xl text-gray-500 ">Sobre Mi</h2>
       <p className="text-gray-400 mx-20 my-5">
         Soy un apasionado programador Full Stack con una formación inusual en
         enología. Mi carrera ha sido un viaje lleno de descubrimientos y
