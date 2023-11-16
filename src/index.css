@@ -1,7 +1,13 @@
+
+/* index.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-    @apply bg-neutral-900 
+body  {
+  background-image: url('../public/bg.png'); /* Ruta relativa a la carpeta public */
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 120%;
 }

@@ -12,7 +12,7 @@ function Home() {
   const [project, setProject] = useState(1);
 
   return (
-    <div className="lg:bg-gradient-to-bl from-orange-400 from-15% to-neutral-900 to-10% pb-5 ">
+    <div className="pb-5 ">
       <Greeting> ¡Hola soy Guillermo Torres!</Greeting>
       <Typing />
       <Navbar
