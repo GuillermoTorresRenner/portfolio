@@ -85,6 +85,12 @@ const ProjectCard = ({ section, project }) => {
             >
               <SiGithub size={50} color="white" />
             </a>
+            <a
+              href={"https://guillermotorresrenner.github.io/cousinvera/"}
+              target="blank"
+            >
+              <SiHtml5 size={50} color="white" />
+            </a>
           </div>
 
           <div>
