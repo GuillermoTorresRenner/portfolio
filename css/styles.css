@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Matemasie&family=Orbitron:wght@400..900&family=Rubik+Moonrocks&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Rubik+Moonrocks&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Matemasie&family=Orbitron:wght@400..900&family=Rubik+Moonrocks&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Matemasie&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Rubik+Moonrocks&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  background-color: black;
+  margin: 2% 5%;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.box, .hobbies, .spotify, .stacks, .contact, #email, .projects, .gh, .age, .resume, .languaje, .about {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.about {
+  background-color: #ff8f00;
+  grid-area: about;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.about div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about #intro {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+  font-family: "Orbitron", sans-serif;
+}
+.about h1 {
+  font-size: 2rem;
+  color: white;
+  padding-left: 20px;
+  font-family: "Rubik Moonrocks", sans-serif;
+}
+.about p {
+  font-size: 1rem;
+  color: white;
+  padding: 20px;
+  font-family: "Urbanist", sans-serif;
+}
+
+.languaje {
+  grid-area: languaje;
+  background-color: #bb82cc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.languaje h2 {
+  font-size: 4rem;
+  color: white;
+}
+
+.resume {
+  grid-area: resume;
+  background-color: #3e2723;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  background-image: url("/assets/images/resume.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.resume img {
+  width: 100%;
+  height: auto;
+}
+
+.age {
+  grid-area: age;
+  background-color: #005457;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  background-image: url("/assets/images/virgo.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gh {
+  grid-area: gh;
+  background-color: #c7006e;
+  background-image: url("/assets/images/gh.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.projects {
+  grid-area: projects;
+  background-color: #6200ee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+.projects h2 {
+  font-size: 2rem;
+  color: white;
+}
+.projects .projectsList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+.projects .projectsList #project1,
+.projects .projectsList #project2,
+.projects .projectsList #project3,
+.projects .projectsList #project4 {
+  border-radius: 10px;
+  height: 100%;
+}
+.projects .projectsList #project1 img,
+.projects .projectsList #project2 img,
+.projects .projectsList #project3 img,
+.projects .projectsList #project4 img {
+  width: 100%;
+  height: auto;
+}
+.projects .projectsList #project1 p,
+.projects .projectsList #project2 p,
+.projects .projectsList #project3 p,
+.projects .projectsList #project4 p {
+  font-size: 1rem;
+  color: white;
+}
+
+#email {
+  grid-area: email;
+  background-color: #985eff;
+  background-image: url("/assets/images/email.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  text-decoration: none;
+  color: #6200ee;
+  font-size: 2rem;
+}
+
+.contact {
+  grid-area: contact;
+  background-color: #69f0ae;
+  text-align: center;
+  color: rgb(185, 18, 197);
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-image: url("/assets/images/message.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.stacks {
+  grid-area: stacks;
+  background-color: #7986cb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.stacks div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.stacks div img {
+  width: 12%;
+  height: auto;
+}
+
+.spotify {
+  grid-area: spotify;
+  background-color: #c0ca33;
+}
+.spotify p {
+  font-size: 1.5rem;
+  color: #7986cb;
+  text-align: center;
+  font-weight: bold;
+}
+
+.hobbies {
+  grid-area: hobbies;
+  background-color: #80cbc4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.hobbies h2 {
+  font-size: 2rem;
+  color: #6200ee;
+  text-align: center;
+  font-weight: bold;
+}
+.hobbies ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: cener;
+  gap: 10px;
+}
+.hobbies ul li {
+  font-size: -4rem;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+  background-color: #985eff;
+  text-align: center;
+}
+
+.switch-container {
+  display: flex;
+  align-items: center;
+}
+
+.switch-input {
+  display: none;
+}
+
+.switch-label {
+  position: relative;
+  display: inline-block;
+  width: 5rem;
+  height: 2.5rem;
+  background-color: black;
+  border-radius: 1.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.switch-label::after {
+  content: "";
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s;
+}
+
+.switch-input:checked + .switch-label {
+  background-color: #ccc;
+}
+
+.switch-input:checked + .switch-label::after {
+  transform: translateX(2.5rem);
+}
+
+@media (max-width: 700px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(9, 30vh);
+    gap: 10px;
+    grid-template-areas: "about about " "about about " "about about " "languaje resume " "projects projects" "age gh " "stacks stacks" "email contact" "spotify spotify" "spotify spotify" "hobbies hobbies";
+  }
+  .about #my_picture {
+    display: none;
+  }
+  .about #intro {
+    font-size: 1.2rem;
+  }
+  .about h1 {
+    font-size: 1.5rem;
+  }
+  .about p {
+    font-size: 1rem;
+  }
+  .age {
+    font-size: 2rem;
+    background-image: url("/assets/images/virgo.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media (min-width: 701px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 30vh);
+    gap: 10px;
+    grid-template-areas: "about about about languaje" "about about about resume" "age gh projects projects" "stacks stacks email contact" "spotify spotify hobbies hobbies";
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

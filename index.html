@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <main>
+
+        <section class="about">
+            <div>
+                <p id="intro"></p>
+                <h1 id="about_greetigs"></h1>
+                <p id="about"></p>
+            </div>
+            <img src="./assets/images/yo.png" width="25%" height="100%" alt="" id="my_picture">
+        </section>
+        <section class="languaje">
+            <h2 id="current_languaje"></h2>
+            <div class="switch-container">
+                <input type="checkbox" id="languageSwitch" class="switch-input">
+                <label for="languageSwitch" class="switch-label"></label>
+            </div>
+        </section>
+        <a class="resume" href="/resume"></a>
+        <section class="age"></section>
+        <a class="gh" href="https://github.com/GuillermoTorresRenner" target="_blank"><a />
+            <section class="projects">
+                <h2 id="projects_title"></h2>
+                <div class="projectsList">
+                    <a id="project1" href="https://el-tomillo.vercel.app/" target="_blank">
+                        <img src="./assets/images/tomillo.png" alt="">
+                        <p id="text_project1"></p>
+                    </a>
+                    <a id="project2" href="https://github.com/GuillermoTorresRenner/fateam" target="_blank">
+                        <img src="./assets/images/fateam.png" alt="">
+                        <p id="text_project2"></p>
+                    </a>
+                    <a id="project3" href="https://backend-coder-production-dfae.up.railway.app/login" target="_blank">
+                        <img src="./assets/images/infuzion.png" alt="">
+                        <p id="text_project3"></p>
+                    </a>
+                    <a id="project4" href="https://etiquetas-eloeashbp-guillermotorresrenners-projects.vercel.app/"
+                        target="_blank">
+                        <img src="./assets/images/etiquetas.png" alt="">
+                        <p id="text_project4"></p>
+                    </a>
+                </div>
+
+            </section>
+            <section class=" stacks">
+                <div>
+                    <img src="./assets/images/vue.png" alt="">
+                    <img src="./assets/images/react.png" alt="">
+                    <img src="./assets/images/next.png" alt="">
+                    <img src="./assets/images/python.png" alt="">
+                    <img src="./assets/images/node.png" alt="">
+                </div>
+                <div>
+                    <img src="./assets/images/spring.png" alt="">
+                    <img src="./assets/images/docker.png" alt="">
+                    <img src="./assets/images/kali.png" alt="">
+                    <img src="./assets/images/mongo.png" alt="">
+                    <img src="./assets/images/sql.png" alt="">
+                </div>
+            </section>
+            <a href="mailto:torresrennerguillermo@gmail.com" id="email""></a>
+            <section class=" contact" type="button" data-toggle="modal" data-target="#staticBackdrop"></section>
+
+
+                <section class="spotify">
+                    <p id="music"></p>
+                    <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/playlist/2KOA0CJCFk3XttapLUBozD?utm_source=generator&theme=0"
+                        width="100%" height="152" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </section>
+                <section class="hobbies">
+                    <h2 id="hobbies_title"></h2>
+                    <ul>
+                        <li id="hobbie1"></li>
+                        <li id="hobbie2"></li>
+                        <li id="hobbie3"></li>
+                        <li id="hobbie4"></li>
+                        <li id="hobbie5"></li>
+                        <li id="hobbie6"></li>
+                        <li id="hobbie7"></li>
+
+                    </ul>
+                </section>
+
+                <!-- Modal de formulario de contacto -->
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 id="modal_title" class="modal-title" id="staticBackdropLabel"></h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <input type="email" required class="form-control" id="email_input"
+                                            placeholder="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control" id="message_input" rows="3" required
+                                            placeholder="Message"></textarea>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" id="btn-close"
+                                    data-dismiss="modal"></button>
+                                <button type="button" id="btn_send" class="btn btn-primary"
+                                    data-dismiss="modal"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/texts.js"></script>
+</body>
+
+</html>
