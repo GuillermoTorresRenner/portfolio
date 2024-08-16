@@ -69,7 +69,7 @@ body {
   text-align: center;
   color: white;
   font-size: 1.5rem;
-  background-image: url("./assets/images/resume.webp");
+  background-image: url("../assets/images/resume.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -89,7 +89,7 @@ body {
   text-align: center;
   color: white;
   font-size: 3rem;
-  background-image: url("./assets/images/virgo.jpeg");
+  background-image: url("../assets/images/virgo.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -98,7 +98,7 @@ body {
 .gh {
   grid-area: gh;
   background-color: #c7006e;
-  background-image: url("./assets/images/gh.webp");
+  background-image: url("../assets/images/gh.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -151,7 +151,7 @@ body {
 #email {
   grid-area: email;
   background-color: #985eff;
-  background-image: url("./assets/images/email.webp");
+  background-image: url("../assets/images/email.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -168,7 +168,7 @@ body {
   color: rgb(185, 18, 197);
   font-size: 1.5rem;
   font-weight: bold;
-  background-image: url("./assets/images/message.webp");
+  background-image: url("../assets/images/message.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
